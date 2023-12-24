@@ -1,0 +1,398 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial',sans-serif;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-image: linear-gradient(to right,#dddb85,#da72ca);
+}
+/* .content
+{
+    background-image: linear-gradient(to right,#e8d57f,#dc8383);
+    padding: 20px;
+} */
+
+nav
+{
+    background-color:#f06f61;
+    display: grid;
+    place-items: center;
+    letter-spacing: 2px;
+  
+}
+
+nav ul{
+    color: black;
+    font-weight: bold;
+    text-size-adjust: 30px;
+    list-style-type: none;
+}
+
+nav ul a{   
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 700;
+  
+}
+/* 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+} */
+
+nav img{
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+
+}
+
+/* image div */
+.row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* padding-top: 10%; */
+    text-align: center;
+}
+
+.col-1
+{
+    flex-basis:100% ;
+    min-width: 300px;
+    padding-bottom: 180px;
+}
+
+.col-1 
+{
+    max-width: 100%;
+    /* padding: 50px 0 ; */
+    height: 200%;
+    width: auto;
+}
+
+.col-1 h1
+{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    letter-spacing: 3px;
+    padding-right: 230px;
+    padding-top: 70px;
+ 
+}
+.col-1 p{
+    font-style: sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: justify;
+    padding-left: 73px;
+
+}
+/* .col-2
+{
+   
+    min-width: 300px;
+} */
+
+.col-2 img
+{
+    max-width: 100%;
+    padding: 0px 0 ;
+    display: flex;
+    flex: 1;
+    
+    
+}
+
+.col-1,.col-2
+{
+    flex: 1;
+    /* padding: 20px; */
+    
+}
+
+.btn
+{
+    
+        display:inline-block;
+        position: relative;
+        padding: 10px 20px;
+        overflow: hidden;
+        background:#f06f61; 
+        height: 45px;
+        width: 200px;
+        margin: 60px 12px;
+        
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-right: 430px;
+}
+
+.btn a{
+    color: white;
+    display: grid;
+
+}
+
+
+
+.row .col-1 .btn ul{
+    color: white;
+    font-weight: bold;
+    text-size-adjust: 30px;
+    list-style-type: none;
+
+}
+.row .col-1 .btn ul a{
+    display: inline-block;
+  
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: lighter;
+  
+}
+
+/* 
+ .btn{
+    display: inline-block;
+    background: var(--black);
+    margin-top: 1rem;
+    color:var(--white);
+    font-size: 1.7rem;
+    padding:1rem 3rem;
+    cursor: pointer; 
+ } */
+.btn .col-1{
+    position: relative;
+    width: 300%;
+    height: 100%;
+    left: 0;
+
+}
+
+.row1 .col-3
+{
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+.row2 .col-4{
+    float: left;
+    padding: 5px;
+
+
+}
+
+.col-3
+{
+   float: left;
+    width:23%;
+   padding-right: 150px;
+
+   
+}
+
+.row1::after
+{
+     content: "";
+    flex: 10%; 
+    
+}
+
+/* .row1::after
+{
+    content: "";
+    clear: both;
+    display: table;
+
+} */
+
+
+/* form contanier  */
+
+.form-container
+{
+    padding-top: 150px;
+    background: #f06f61;
+    width: 510px;
+    height: 310px;
+    /* position: relative; */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 280px;
+    margin-left: 53%;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* .form-container span
+{
+    font-weight: bold;
+    padding: 0 10px;
+    color: black;
+    cursor: pointer;
+    width: 100px;
+    display: flex;
+} */
+
+.form-container p{
+    /* text-align: left; */
+    letter-spacing: 2px;
+    /* display: flex; */
+    text-align: left;
+    text-indent: 20px;
+    padding-left: 20px;
+
+}
+.form-container  .form p{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.form-container .f1 img{
+    margin-top: 0px;
+    top: 30px;
+    right: 30px;
+    left: 50%;
+    transform: translate(-750%,-100%);
+
+    
+}
+.form-container .f1 p{
+    letter-spacing: 0px;
+}
+
+
+
+/* Existing styles remain unchanged */
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for tablets and smaller screens */
+    .row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .col-1,
+    .col-2 {
+      flex: 1;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  
+    .row1 .col-3 {
+      float: none;
+      width: 100%;
+      padding-right: 0;
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* Adjustments for mobile devices */
+    .col-1 h1 {
+      font-size: 30px;
+      line-height: 40px;
+      padding-right: 0;
+    }
+  
+    .col-1 p {
+      padding-left: 20px;
+    }
+  
+    .btn {
+      margin-right: 0;
+    }
+  
+    .row1,
+    .col-3 {
+      width: 100%;
+      float: none;
+      padding-right: 0;
+    }
+
+  
+  }
+
+@media only screen and (max-width: 768px) {
+    .form-container {
+        max-width: 100%;
+        margin-left: 10%; /* Adjust margin for better centering */
+    }
+
+    .form-container .form p,
+    .form-container .f1 {
+        width: calc(100% - 20px);
+        /* Adjust the width based on padding and margin */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form-container {
+        padding: 10px;
+        margin-left: 5%; /* Adjust margin for better centering */
+    }
+
+    .form-container .form p,
+    .form-container .f1 
+    {
+        font-size: 40px; /* Adjust font size for smaller screens */
+        width: calc(100% - 20px);
+        
+    }
+
+    .row1{
+        float: none;
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+    .form-container .form .f1 img{
+        width: 100%;
+        float: none;
+     
+      padding-right: 0;
+      text-align: center;
+    }
+}
+
+
+  
+/* scroll */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(205, 100, 100); 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f06f61; 
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f06f61; 
+  }
+  
